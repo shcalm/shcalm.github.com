@@ -280,178 +280,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://shcalm.github.io/2017/12/28/android-bt/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hua Song">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hua Song的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/28/android-bt/" itemprop="url">android bt</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-28T11:06:06+08:00">
-                2017-12-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/android/" itemprop="url" rel="index">
-                    <span itemprop="name">android</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>android M下的bt分析<br>1.android bt app  </p>
-<p>adapterservice profile<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram</span><br><span class="line">adapterservice-&gt;&gt;profileservice: manage profiles state and function</span><br><span class="line">profileservice-&gt;&gt;adapterservice: update state to adapterservice</span><br></pre></td></tr></table></figure></p>
-<p>2.btstack<br>BTI F: Bluetooth Interface<br>BTU : Bluetooth Upper Layer<br>BTM: Bluetooth Manager<br>BTE  :Bluetooth embedded system<br>BTA  :Blueetooth application layer<br>CO: call out\CI: call in<br>HF : Handsfree Profile<br>HH: HID Host Profile<br>HL: Health Device Profile<br>AV:audio\vidio<br>ag: audio gateway<br>ar: audio/video registration<br>gattc: GATT client    </p>
-<p>btif–&gt;bte–&gt;btu–&gt;btm–&gt;l2cp–&gt;sdp–&gt;[gatt,smp,btm_ble]</p>
-<p>btmodules init process<br>btconfig———-&gt;btif_config.c<br>btsnoop———–&gt;btsnoop.c<br>hci————-&gt;hci_layer.c</p>
-<blockquote>
-<p>module——init startup shutdown clean_up </p>
-</blockquote>
-<p>btu_startup</p>
-<hr>
-<p>OPP</p>
-<ol>
-<li>process</li>
-<li>key point</li>
-</ol>
-<hr>
-<p>A2DP</p>
-<ol>
-<li>process</li>
-<li>key point</li>
-<li>releate to audio</li>
-</ol>
-<hr>
-<p>HID</p>
-<ol>
-<li>process</li>
-<li>debug </li>
-<li>key point</li>
-<li>about input system</li>
-</ol>
-<hr>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://shcalm.github.io/2017/12/27/os/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -795,7 +623,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -806,7 +634,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -817,7 +645,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
